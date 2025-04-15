@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-red-600 font-bold text-xl">
+                <img src="./assets/huskylogo-red.svg" class="w-40 h-30" alt="Husky Logo">
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-red-600">Home</a>
+                <a href="jobs 1.html" class="text-gray-700 hover:text-red-600">Jobs</a>
+                <a href="contact.html" class="text-gray-700 hover:text-red-600">Contact</a>
+                <a href="about.html" class="text-gray-700 hover:text-red-600">About Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 text-3xl focus:outline-none">☰</button>
+        </div>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden absolute top-16 right-6 bg-white shadow-lg rounded-lg w-40 py-2 mt-4">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:text-red-600">Home</a>
+            <a href="jobs 1.html" class="block px-4 py-2 text-gray-700 hover:text-red-600">Jobs</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:text-red-600">Contact</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:text-red-600">About</a>
+        </div>
+    </nav>
+
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+        <div class="bg-white shadow-md rounded-lg p-10 w-full max-w-sm">
+            <!-- Amount Input -->
+            <label class="block text-gray-600 text-md mb-2">How much do you want to deposit?</label>
+            <div class="relative">
+                <select class="absolute left-3 top-1/2 transform -translate-y-1/2 bg-transparent text-gray-600 focus:outline-none">
+                    <option selected>$</option>
+                </select>
+                <input type="text" value="50,000" class="text-md w-full border rounded-lg py-2 pl-10 pr-4 text-gray-800 focus:ring focus:ring-blue-300">
+            </div>
+
+            <!-- Payment Methods -->
+            <p class="mt-8 text-gray-600 text-md">Choose a Payment Method</p>
+
+            <div class="mt-3 space-y-3 grid gap-2">
+                <!-- Credit/Debit Card Button -->
+                <a href="Payment Contact.html">
+                    <button class="flex items-center justify-between w-full border rounded-lg px-4 py-3 bg-white hover:bg-gray-200 ease-in-out" style="transition: 0.5s;">
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75h19.5M2.25 12h19.5M2.25 17.25h10.5"></path>
+                            </svg>
+                            <span class="text-gray-800 font-medium text-xl">Bank Deposit</span>
+                        </div>
+                    </button>
+                </a>
+
+
+                <!-- Bank Transfer Button (Highlighted) -->
+                <a href="Payment Contact.html" class="my-10">
+                    <button class="flex items-center justify-between w-full border rounded-lg px-4 py-3 bg-white hover:bg-gray-200 ease-in-out" style="transition: 0.5s;">
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25m-7.5 0V9M3 21h18m-9-6v6m-9-12h18L12 3 3 9z"></path>
+                            </svg>
+                            <span class="text-gray-800 font-medium text-xl">Online Transfer</span>
+                        </div>
+                    </button>
+                </a>
+
+
+                <!-- Pay with Account Button -->
+                <a href="Payment Contact.html">
+                    <button class="flex items-center justify-between w-full border rounded-lg px-4 py-3 bg-white hover:bg-gray-200 ease-in-out" style="transition: 0.5s;">
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5h18M4.5 6h15M3 18h18"></path>
+                            </svg>
+                            <span class="text-gray-800 font-medium text-xl">Western Union</span>
+                        </div>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- Large Screen Footer -->
+        <div class="hidden lg:block ">
+            <div class="flex flex-col items-center py-6">
+                <img src="assets/huskylogo-red.svg" class="w-64 mb-2">
+            </div>
+            <footer class="flex flex-col items-center justify-center text-left bg-white py-8">
+                <div class="flex justify-between w-4/5 max-w-6xl">
+                    <div>
+                        <h3 class="font-bold text-red-600">INDUSTRIES</h3>
+                        <ul class="text-gray-800">
+                            <li>Consumer Goods</li>
+                            <li>Medical</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-red-600">SOLUTIONS</h3>
+                        <ul class="text-gray-800">
+                            <li>Systems</li>
+                            <li>PET Tooling</li>
+                            <li>Molds</li>
+                            <li>Hot Runners</li>
+                            <li>Mold Controllers</li>
+                            <li>Manuals</li>
+                            <li>References and Tools</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-red-600">SERVICES</h3>
+                        <ul class="text-gray-800">
+                            <li>Parts</li>
+                            <li>Service Contracts</li>
+                            <li>Upgrades and Encore™</li>
+                            <li>Service Resource Library</li>
+                            <li>Hot Runner Refurbishment</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-red-600">RESOURCES</h3>
+                        <ul class="text-gray-800">
+                            <li>Blogs</li>
+                            <li>Supplier Information</li>
+                            <li>Podcasts</li>
+                            <li>Events</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-red-600">ABOUT US</h3>
+                        <ul class="text-gray-800">
+                            <li>Leadership Team</li>
+                            <li>Worldwide Locations</li>
+                            <li>News</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4 mt-6 text-gray-600 text-xl">
+                    <a href="#">
+                        <div class="bi bi-facebook"></div>
+                    </a>
+                    <a href="#">
+                        <div class="bi bi-twitter"></div>
+                    </a>
+                    <a href="#">
+                        <div class="bi bi-instagram"></div>
+                    </a>
+                    <a href="#">
+                        <div class="bi bi-linkedin"></div>
+                    </a>
+                </div>
+
+                <div class="mt-4 text-gray-700 text-sm">
+                    <a href="#" class="mx-2">Legal</a> |
+                    <a href="#" class="mx-2">Privacy</a> |
+                    <a href="#" class="mx-2">Accessibility</a> |
+                    <a href="#" class="mx-2">Cookie Policy</a> |
+                    <a href="#" class="mx-2">Cookies Settings</a>
+                </div>
+
+                <div class="text-gray-700 text-sm mt-2">
+                    © 2025 Husky Technologies™. All rights reserved.
+                </div>
+            </footer>
+        </div>
+        <!-- Small Screen Footer -->
+        <div class="lg:hidden bg-white text-center py-6 border-t-2 border-gray-300 mt-20">
+            <div class="flex flex-col items-center py-6">
+                <img src="assets/huskylogo-red.svg" class="w-52 mb-2">
+            </div>
+
+            <div class="space-y-2 w-full px-4 py-4">
+                <button class="w-full bg-yellow-400 text-black font-bold py-2 flex justify-between px-4 items-center">
+                    Order Parts <i class="bi bi-cart"></i>
+                </button>
+                <button class="w-full bg-yellow-400 text-black font-bold py-2 flex justify-between px-4 items-center">
+                    Configure Hot Runners and Controllers <i class="bi bi-cart"></i>
+                </button>
+            </div>
+
+            <div class="mt-6">
+                <ul class="text-red-600 text-xl font-bold space-y-2">
+                    <li>Industries</li>
+                    <li>Solutions</li>
+                    <li>Services</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+
+            <div class="flex justify-center space-x-4 mt-6 text-3xl">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+            <div class="mt-4 text-gray-900 text-sm">
+                <a href="#" class="mx-2">Legal</a> |
+                <a href="#" class="mx-2">Privacy</a> |
+                <a href="#" class="mx-2">Accessibility</a> |
+                <a href="#" class="mx-2">Cookie Policy</a> |
+                <a href="#" class="mx-2">Cookies Settings</a>
+            </div>
+
+            <div class="text-gray-900 text-sm mt-2">
+                © 2025 Husky Technologies™. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

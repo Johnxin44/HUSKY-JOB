@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husky - Injection Molding Systems</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        *{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-red-600 font-bold text-xl">
+                <img src="./assets/huskylogo-red.svg" class="w-40 h-30" alt="Husky Logo">
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-red-600">Home</a>
+                <a href="jobs 1.html" class="text-gray-700 hover:text-red-600">Jobs</a>
+                <a href="contact.html" class="text-gray-700 hover:text-red-600">Contact</a>
+                <a href="about.html" class="text-gray-700 hover:text-red-600">About Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 text-3xl focus:outline-none">☰</button>
+        </div>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden absolute top-16 right-6 bg-white shadow-lg rounded-lg w-40 py-2 mt-4">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:text-red-600">Home</a>
+            <a href="jobs 1.html" class="block px-4 py-2 text-gray-700 hover:text-red-600">Jobs</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:text-red-600">Contact</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:text-red-600">About</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0">
+            <img src="assets/Fabbri_Group.jpg" alt="Background Bottles" class="w-full h-full object-cover brightness-50">
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative text-center text-white px-6 md:px-12 max-w-4xl">
+            <p class="text-lg md:text-xl font-semibold uppercase tracking-wide animate-fadeIn">Your perfect partner for production.</p>
+            <h1 class="text-4xl md:text-6xl font-extrabold uppercase leading-tight mt-4 animate-slideUp">
+                The most efficient way <br class="hidden md:inline"> to achieve it all is <span class="text-yellow-400">with Husky.</span>
+            </h1>
+
+            <!-- Call-to-Action Button -->
+            <a href="#about" class="mt-6 inline-block bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-300 transition duration-300 animate-fadeIn">
+                Learn More
+            </a>
+        </div>
+    </header>
+
+
+    <section class="mt-8 md:max-w-2xl text-left text-xl px-4 mx-auto">
+        <p>Whether your company is a start-up or well-established business, you didn’t get where you are by compromising on quality. We didn’t get to be a world leader in injection molding systems for consumer goods, medical devices, beverage and automotive products that way either. Husky systems, hot runners, controllers, auxiliaries, components and services have always been about return on investment, long-term value and end-to-end solutions for customers.</p>
+        <p class="mt-4">That is why we will always prove to be the better value over less advanced or minimally engineered systems. These products often cannot deliver the higher performance, efficiency or reliability of a Husky. And that could cost you more than you expected—in lost productivity, profitability and, most importantly, the trust of your own customers.</p>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <div>
+        <!-- Big Screen -->
+        <div class="md:block hidden max-w-6xl mx-auto my-16 p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <!-- Image -->
+                <div>
+                    <img src="assets/featureblock-1280x862_hp_industries_r10-1.webp" alt="Workers in factory" class="w-full h-auto">
+                </div>
+                <!-- Text Content -->
+                <div class="text-left">
+                    <p class="text-sm font-bold uppercase text-gray-700">OUR BUSINESS IS TO KNOW YOUR BUSINESS</p>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mt-2 uppercase">Industries We Serve</h2>
+                    <p class="mt-4 text-gray-800 text-sm">
+                        Husky enables the production of finished products for many consumer and medical markets. Including medical diagnostic devices, food and beverages, thin-wall packaging, closures, consumer goods, electronics, and more.
+                    </p>
+                    <button class="mt-6 inline-block bg-yellow-400 text-black font-bold px-8 py-2 hover:shadow-md transition">
+                        Find Your Market →
+                    </button>
+                </div>
+            </div>
+        </div>    
+        <!-- Small Screen -->
+        <div class="md:hidden block mt-20">
+            <img src="assets/featureblock-1280x862_hp_industries_r10-1.webp" alt="Industries We Serve" class="mx-auto mb-6">
+            <!-- Industries Section -->
+            <div class="text-left mx-auto px-4 mt-15">
+                <p class="text-lg">OUR BUSINESS IS TO KNOW YOUR BUSINESS</p>
+                <h2 class="text-3xl">INDUSTRIES WE SERVE</h2>
+                <p class="text-gray-900 max-w-2xl mx-auto text-sm mt-4">Husky enables the production of finished products for many consumer and medical markets, including medical diagnostic devices, food and beverages, thin-wall packaging, closures, consumer goods, electronics, and more.</p>
+                <button class="mt-4 inline-block bg-yellow-400 text-black px-6 py-2 font-semibold hover:bg-yellow-600">Find Your Market →</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SOLUTION SECTION -->
+    <div>
+        <!-- Big Screen -->
+        <div class="md:block hidden max-w-5xl mx-auto my-16 p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <!-- Text Content -->
+                <div class="text-left">
+                    <p class="text-sm font-bold uppercase text-gray-700">THE HUSKY DIFFERENCE</p>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mt-2 uppercase">End-to-End Business Solutions.</h2>
+                    <p class="mt-4 text-gray-800 text-sm">
+                        Husky offers more than just systems and equipment. We gain a full understanding of your business, how it operates, what your objectives are, and the needs of your own customers before we recommend anything. We will work with you to arrive at just the right manufacturing solution. Then we will deliver, install and set up your new Husky onsite to ensure you are up and running according to your exact specifications.
+                    </p>
+                    <p class="mt-4 text-gray-800 text-sm">
+                        We will also provide training for your employees to ensure that they can fully operate your new Husky system on their own. Additionally, we stay connected with you throughout the life of your system with genuine OEM parts, technical assistance and problem-solving support. And we’re here for you with proactive, predictive and transparent services, such as Advantage+EliteTM, in which we call you before a problem occurs. We utilize the power of remote connectivity through our proactive remote monitoring center to monitor your system. And if we notice a decline in equipment performance, we are already on top of it before you even notice—which helps avoid unplanned downtime.
+                    </p>
+                    <button class="mt-6 inline-block bg-yellow-400 text-black font-bold px-8 py-2 hover:shadow-md transition">
+                        Our Solutions →
+                    </button>
+                </div>
+                <!-- Image -->
+                <div>
+                    <img src="assets/featureblock-1280x862_hp-solutions.webp" alt="Old factory machinery" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+        <!-- Small Screen -->
+        <div class="md:hidden block mt-20">
+            <img src="assets/featureblock-1280x862_hp-solutions.webp" alt="Industries We Serve" class="mx-auto mb-6">
+            <!-- Industries Section -->
+            <div class="text-left mx-auto px-4 mt-15">
+                <p class="text-lg">THE HUSKY DIFFERENCE</p>
+                <h2 class="text-3xl">END-TO-END BUSINESS SOLUTIONS.</h2>
+                <p class="text-gray-900 max-w-2xl mx-auto text-sm">Husky offers more than just systems and equipment. We gain a full understanding of your business, how it operates, what your objectives are, and the needs of your own customers before we recommend anything. We will work with you to arrive at just the right manufacturing solution. Then we will deliver, install and set up your new Husky onsite to ensure you are up and running according to your exact specifications.</p>
+                <p class="text-gray-900 max-w-2xl mx-auto text-sm mt-4">We will also provide training for your employees to ensure that they can fully operate your new Husky system on their own. Additionally, we stay connected with you throughout the life of your system with genuine OEM parts, technical assistance and problem-solving support. And we’re here for you with proactive, predictive and transparent services, such as Advantage+EliteTM, in which we call you before a problem occurs. We utilize the power of remote connectivity through our proactive remote monitoring center to monitor your system. And if we notice a decline in equipment performance, we are already on top of it before you even notice—which helps avoid unplanned downtime.</p>
+                <button class="mt-4 inline-block bg-yellow-400 text-black px-6 py-2 font-semibold hover:bg-yellow-600">Our Solutions →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- VALUE SECTION -->
+    <div>
+        <!-- Big Screen -->
+        <div class="md:block hidden max-w-6xl mx-auto my-16 p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <!-- Image -->
+                <div>
+                    <img src="assets/featureblock-1280x862_hp-services.webp" alt="Workers in factory" class="w-full h-auto">
+                </div>
+                <!-- Text Content -->
+                <div class="text-left">
+                    <p class="text-sm font-bold uppercase text-gray-700">Our Value to You</p>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mt-2 uppercase">It’s Worth It.</h2>
+                    <p class="mt-4 text-gray-800 text-sm">
+                        Simply put, investing in Husky systems, solutions, and services is worth it.
+                        From the moment you purchase your first system to years down the road—long after lesser
+                        systems and products begin to experience problems or fail prematurely.
+                    </p>
+                    <p class="mt-2 text-gray-800 text-sm">
+                        We are with you every step of the way to ensure optimal performance and lowest total cost-of-ownership.
+                        Discover the many other differences that make Husky a good business decision when selecting a quality 
+                        injection molding partner.
+                    </p>
+                    <button class="mt-6 inline-block bg-yellow-400 text-black font-bold px-8 py-2 hover:shadow-md transition">
+                        Our Services →
+                    </button>
+                </div>
+            </div>
+        </div>    
+        <!-- Small Screen -->        
+        <div class="md:hidden block mt-20">
+            <img src="assets/featureblock-1280x862_hp-services.webp" alt="Industries We Serve" class="mx-auto mb-6">
+            <!-- Industries Section -->
+            <div class="text-left mx-auto px-4 mt-15">
+                <p class="text-lg">OUR BUSINESS IS TO KNOW YOUR BUSINESS</p>
+                <h2 class="text-3xl">IT'S WORTH IT.</h2>
+                <p class="text-gray-900 max-w-2xl mx-auto text-sm">Simply put, investing in Husky systems, solutions and services is worth it. From the moment you purchase your first system to years down the road—long after lesser systems and products begin to experience problems or fail prematurely. We are with you every step of the way to ensure optimal performance and lowest total cost-of-ownership. Discover the many other differences that make Husky a good business decision when selecting a quality injection molding partner. Including proactive, predictive and transparent services, process and production monitoring, extended protection and maintenance plans, machine audits, equipment refurbishments and upgrades, and more.</p>
+                <button class="mt-4 inline-block bg-yellow-400 text-black px-6 py-2 font-semibold hover:bg-yellow-600">Our Services →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="about">
+        <!-- Big Screen -->
+        <div class="md:block hidden max-w-5xl mx-auto my-16 p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Text Content -->
+                <div class="text-left">
+                    <p class="text-sm font-bold uppercase text-gray-700">Get to Know Husky</p>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mt-2 uppercase">About Us</h2>
+                    <p class="mt-4 text-gray-800 text-sm">
+                        Since 1953, Husky has grown to become a global leader in injection molding systems 
+                        and services to the plastics industry, with over 4,300 employees in 35 locations worldwide.
+                    </p>
+                    <p class="mt-2 text-gray-800 text-sm">
+                        Supporting our customers in over 140 countries, we prioritize a customer-first philosophy.
+                    </p>
+                    <a href="about.html" class="mt-6 inline-block bg-yellow-400 text-black font-bold px-8 py-2 rounded-md hover:shadow-mdtransition">
+                        Learn More →
+                    </a>
+                </div>
+                <!-- Image -->
+                <div>
+                    <img src="assets/featureblock-1280x862_hp-about.webp" alt="Old factory machinery" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+        <!-- Small Screen -->
+        <div class="md:hidden block mt-20">
+            <img src="assets/featureblock-1280x862_hp-about.webp" alt="Industries We Serve" class="mx-auto mb-6">
+            <!-- Industries Section -->
+            <div class="text-left mx-auto px-4 mt-15">
+                <p class="text-lg">GET TO KNOW HUSKY</p>
+                <h2 class="text-3xl font-">ABOUT US</h2>
+                <p class="text-gray-900 max-w-2xl mx-auto text-sm">Since 1953, Husky has grown to become a global leader in injection molding systems and services to the plastics industry, with over 4,300 employees in 35 locations worldwide, supporting our customers in over 140 countries. Learn more about our customer-first philosophy.</p>
+                <a href="about.html" class="mt-4 inline-block bg-yellow-400 text-black px-6 py-2 font-semibold hover:bg-yellow-600">Learn More →</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Job Vacancies Section -->
+    <section class="max-w-4xl mx-5 md:mx-auto my-16 px-12 py-12 bg-white rounded-lg border border-gray-200 text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900">We're Hiring!</h2>
+        <p class="mt-4 text-gray-700">
+            We have multiple vacant roles available! Join our team and be part of something great. Apply now and take the next step in your career.
+        </p>
+
+        <a 
+            href="jobs 1.html" 
+            class="mt-6 bg-yellow-400 text-black font-bold px-6 py-3 rounded-md shadow-md hover:bg-yellow-500 transition inline-block">
+            View Open Positions
+        </a>
+
+        <p class="mt-4 text-sm text-gray-500">Don't miss this opportunity. Apply today!</p>
+    </section>
+
+
+    
+
+    
+    <!-- Large Screen Contact Section -->
+    <section class="hidden lg:flex items-center bg-gray-100 py-12 px-10">
+        <div class="w-4/5 max-w-6xl mx-auto flex items-center bg-white shadow-lg">
+            <!-- Image Section -->
+            <div class="w-1/2">
+                <img src="assets/assistant.webp" alt="Support Agent" class="w-full h-full object-cover">
+            </div>
+            <!-- Content Section -->
+            <div class="w-1/2 p-10">
+                <p class="text-red-600 font-bold">WE’RE HERE FOR YOU, ALWAYS</p>
+                <h2 class="text-3xl font-bold">CONTACT US TODAY.</h2>
+                <p class="text-gray-700 mt-3">
+                    Husky is here for its customers, prospective customers, partners, and communities—
+                    whatever you need, whenever you need it. Simply complete our form and we’ll do the rest. 
+                    You can count on it.
+                </p>
+                <p class="mt-3">
+                    Give us a call at <a href="tel:17423691134" class="text-red-600 font-bold">+1 (742) 369-1134</a>.
+                </p>
+                <a href="contact.html" class="mt-5 inline-block bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-500 transition">
+                    Contact Us →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Small Screen Contact Section -->
+    <section class="lg:hidden bg-white mx-10 shadow-xl">
+        <!-- Image Section -->
+        <div class="relative">
+            <img src="assets/assistant.webp" alt="Support Agent" class="w-full object-cover rounded-t-md">
+            <div class="absolute bottom-0 left-0 w-1/2 h-2 bg-yellow-400"></div>
+        </div>
+        <!-- Content Section -->
+        <div class="border rounded-b-md border-gray-200 border-t-0 text-center py-8">
+            <p class="text-red-600 font-bold">WE’RE HERE FOR YOU, ALWAYS</p>
+            <h2 class="text-2xl font-bold">CONTACT US TODAY.</h2>
+            <p class="text-gray-700 mt-3 px-8">
+                Husky is here for its customers, prospective customers, partners, and communities—
+                whatever you need, whenever you need it. Simply complete our form and we’ll do the rest. 
+                You can count on it.
+            </p>
+            <p class="mt-3">
+                Give us a call at <a href="tel:17423691134" class="text-red-600 font-bold">+1 (742) 369-1134</a>.
+            </p>
+            <a href="contact.html" class="mt-5 mx-auto block bg-yellow-400 text-black font-bold w-max px-6 py-2 rounded-lg shadow-md text-center hover:bg-yellow-500 transition">
+                Contact Us →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Large Screen Footer -->
+        <div class="hidden lg:block ">
+            <div class="flex flex-col items-center py-6">
+                <img src="assets/huskylogo-red.svg" class="w-64 mb-2">
+            </div>
+            <footer class="flex flex-col items-center justify-center text-left bg-white py-8">
+                <div class="flex justify-between w-4/5 max-w-6xl">
+                    <div>
+                        <h3 class="font-bold text-red-600">INDUSTRIES</h3>
+                        <ul class="text-gray-800">
+                            <li>Consumer Goods</li>
+                            <li>Medical</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-red-600">SOLUTIONS</h3>
+                        <ul class="text-gray-800">
+                            <li>Systems</li>
+                            <li>PET Tooling</li>
+                            <li>Molds</li>
+                            <li>Hot Runners</li>
+                            <li>Mold Controllers</li>
+                            <li>Manuals</li>
+                            <li>References and Tools</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-red-600">SERVICES</h3>
+                        <ul class="text-gray-800">
+                            <li>Parts</li>
+                            <li>Service Contracts</li>
+                            <li>Upgrades and Encore™</li>
+                            <li>Service Resource Library</li>
+                            <li>Hot Runner Refurbishment</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-red-600">RESOURCES</h3>
+                        <ul class="text-gray-800">
+                            <li>Blogs</li>
+                            <li>Supplier Information</li>
+                            <li>Podcasts</li>
+                            <li>Events</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-red-600">ABOUT US</h3>
+                        <ul class="text-gray-800">
+                            <li>Leadership Team</li>
+                            <li>Worldwide Locations</li>
+                            <li>News</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4 mt-6 text-gray-600 text-xl">
+                    <a href="#"><div class="bi bi-facebook"></div></a>
+                    <a href="#"><div class="bi bi-twitter"></div></a>
+                    <a href="#"><div class="bi bi-instagram"></div></a>
+                    <a href="#"><div class="bi bi-linkedin"></div></a>
+                </div>
+
+                <div class="mt-4 text-gray-700 text-sm">
+                    <a href="#" class="mx-2">Legal</a> |
+                    <a href="#" class="mx-2">Privacy</a> |
+                    <a href="#" class="mx-2">Accessibility</a> |
+                    <a href="#" class="mx-2">Cookie Policy</a> |
+                    <a href="#" class="mx-2">Cookies Settings</a>
+                </div>
+
+                <div class="text-gray-700 text-sm mt-2">
+                    © 2025 Husky Technologies™. All rights reserved.
+                </div>
+            </footer>
+        </div>
+        <!-- Small Screen Footer -->
+        <div class="lg:hidden bg-white text-center py-6 border-t-2 border-gray-300 mt-20">
+            <div class="flex flex-col items-center py-6">
+                <img src="assets/huskylogo-red.svg" class="w-52 mb-2">
+            </div>
+
+            <div class="space-y-2 w-full px-4 py-4">
+                <button class="w-full bg-yellow-400 text-black font-bold py-2 flex justify-between px-4 items-center">
+                    Order Parts <i class="bi bi-cart"></i>
+                </button>
+                <button class="w-full bg-yellow-400 text-black font-bold py-2 flex justify-between px-4 items-center">
+                    Configure Hot Runners and Controllers <i class="bi bi-cart"></i>
+                </button>
+            </div>
+
+            <div class="mt-6">
+                <ul class="text-red-600 text-xl font-bold space-y-2">
+                    <li>Industries</li>
+                    <li>Solutions</li>
+                    <li>Services</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+
+            <div class="flex justify-center space-x-4 mt-6 text-3xl">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+            <div class="mt-4 text-gray-900 text-sm">
+                <a href="#" class="mx-2">Legal</a> |
+                <a href="#" class="mx-2">Privacy</a> |
+                <a href="#" class="mx-2">Accessibility</a> |
+                <a href="#" class="mx-2">Cookie Policy</a> |
+                <a href="#" class="mx-2">Cookies Settings</a>
+            </div>
+
+            <div class="text-gray-900 text-sm mt-2">
+                © 2025 Husky Technologies™. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+<script>
+// navbar popup
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');      
+});
+</script>
+</body>
+</html>
