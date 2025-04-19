@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Glazzom</title>
+    <title>Apply Form</title>
+    <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100">
 
     <!-- Navbar -->
@@ -33,59 +36,82 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="relative bg-red-700 text-white mt-10 py-16 text-center">
-        <h1 class="text-5xl font-bold">Contact Us</h1>
-        <p class="text-yellow-300 mt-2">We'd love to hear from you!</p>
-    </header>
+    <!-- Form Section -->
+    <div id="form-container" class="w-full max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto my-20 bg-white shadow-lg p-8 rounded-lg">
+        <h2 class="text-2xl font-bold text-red-500 mb-6">Fill Form To Apply</h2>
 
-    <!-- Contact Section -->
-    <section class="container max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8">
-        <!-- Left Section -->
-        <div>
-            <h2 class="text-3xl font-bold text-gray-800">Get In Touch</h2>
-            <p class="text-gray-600 mt-2">We are here to assist you.</p>
+        <form id="jobForm">
+            <!-- Name -->
+            <label class="block font-medium text-gray-700">* Name:</label>
+            <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-md mb-4">
 
-            <div class="mt-6">
-                <h3 class="font-semibold text-red-700">📍 Address</h3>
-                <p class="text-gray-700">Husky Injection Molding Systems, LTD. 500 Queen St S,<br> Bolton, ON L7E 5S5, Canada</p>
-            </div>
+            <!-- Country -->
+            <label class="block font-medium text-gray-700">* Country:</label>
+            <input type="text" id="country" class="w-full p-3 border border-gray-300 rounded-md mb-4">
 
-            <div class="mt-4">
-                <h3 class="font-semibold text-red-700">📧 Email</h3>
-                <p class="text-gray-700">support@glazzom.com</p>
-            </div>
+            <!-- City -->
+            <label class="block font-medium text-gray-700">* City:</label>
+            <input type="text" id="city" class="w-full p-3 border border-gray-300 rounded-md mb-4">
 
-            <div class="mt-4">
-                <h3 class="font-semibold text-red-700">📞 Phone</h3>
-                <p class="text-gray-700">(555) 555-5555</p>
-            </div>
-        </div>
+            <!-- Specialization/Profession -->
+            <label class="block font-medium text-gray-700">* Specialization/Profession:</label>
+            <input type="text" id="specialization" class="w-full p-3 border border-gray-300 rounded-md mb-4">
 
-        <!-- Right Section (Contact Form) -->
-        <div class="bg-white shadow-lg p-6 rounded-lg">
-            <h2 class="text-3xl font-bold text-center text-red-700">Send Us A Message</h2>
-            <form class="mt-6 space-y-4">
-                <div class="grid grid-cols-2 gap-4">
-                    <input type="text" placeholder="First Name" class="border p-3 w-full rounded-md focus:ring-2 focus:ring-red-500">
-                    <input type="text" placeholder="Last Name" class="border p-3 w-full rounded-md focus:ring-2 focus:ring-red-500">
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <input type="email" placeholder="Email" class="border p-3 w-full rounded-md focus:ring-2 focus:ring-red-500">
-                    <input type="text" placeholder="Phone Number" class="border p-3 w-full rounded-md focus:ring-2 focus:ring-red-500">
-                </div>
-                <textarea placeholder="Your Message" class="border p-3 w-full rounded-md focus:ring-2 focus:ring-red-500" rows="4"></textarea>
-                <button type="submit" class="bg-red-600 text-white py-3 px-6 rounded-md hover:bg-red-700 w-full transition">Send Message</button>
-            </form>
-        </div>
-    </section>
+            <!-- About Me -->
+            <label class="block font-medium text-gray-700">* About me:</label>
+            <textarea id="about" class="w-full p-3 border border-gray-300 rounded-md mb-4"></textarea>
+
+            <!-- Work Experience -->
+            <label class="block font-medium text-gray-700">* Work experience:</label>
+            <input type="text" id="experience" class="w-full p-3 border border-gray-300 rounded-md mb-4">
+
+            <!-- Education Level -->
+            <label class="block font-medium text-gray-700">* Education level:</label>
+            <input type="text" id="education" class="w-full p-3 border border-gray-300 rounded-md mb-4">
+
+            <!-- Reason for Applying -->
+            <label class="block font-medium text-gray-700">* Reason for Applying:</label>
+            <textarea id="reason" class="w-full p-3 border border-gray-300 rounded-md mb-4"></textarea>
+
+            <!-- Passport -->
+            <label class="block font-medium text-gray-700">* Passport (Yes/No/specify if expired):</label>
+            <input type="text" id="passport" class="w-full p-3 border border-gray-300 rounded-md mb-4">
+
+            <!-- Visa/Viza -->
+            <label class="block font-medium text-gray-700">* Visa/Viza (Specify country):</label>
+            <input type="text" id="visa" class="w-full p-3 border border-gray-300 rounded-md mb-4">
+
+            <!-- Upload Image -->
+            <label class="block font-medium text-gray-700">* Upload CV:</label>
+            <input type="file" id="image" class="w-full p-3 border border-gray-300 rounded-md mb-4">
+
+            <!-- Email -->
+            <label class="block font-medium text-gray-700">* Email:</label>
+            <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-md mb-4">
+
+            <!-- Social Media Link 1 -->
+            <label class="block font-medium text-gray-700"> Social Media Link 1:</label>
+            <input type="url" id="social1" class="w-full p-3 border border-gray-300 rounded-md mb-4">
+
+            <!-- Social Media Link 2 -->
+            <label class="block font-medium text-gray-700"> Social Media Link 2:</label>
+            <input type="url" id="social2" class="w-full p-3 border border-gray-300 rounded-md mb-4">
+
+            <!-- Submit Button -->
+            <button type="button" onclick="validateForm()" class="w-full bg-red-500 text-white font-bold py-3 px-4 rounded-md hover:bg-red-600 transition duration-300">
+                Submit
+            </button>
+        </form>
+
+
+    </div>
 
     <!-- Footer -->
     <footer>
         <!-- Large Screen Footer -->
         <div class="hidden lg:block ">
             <div class="flex flex-col items-center py-6">
-                <img src="assets/huskylogo-red.svg" class="w-64 mb-2">
+                <img src="./assets/huskylogo-red.svg" class="w-64 mb-2">
             </div>
             <footer class="flex flex-col items-center justify-center text-left bg-white py-8">
                 <div class="flex justify-between w-4/5 max-w-6xl">
@@ -138,10 +164,18 @@
                 </div>
 
                 <div class="flex space-x-4 mt-6 text-gray-600 text-xl">
-                    <a href="#"><div class="bi bi-facebook"></div></a>
-                    <a href="#"><div class="bi bi-twitter"></div></a>
-                    <a href="#"><div class="bi bi-instagram"></div></a>
-                    <a href="#"><div class="bi bi-linkedin"></div></a>
+                    <a href="#">
+                        <div class="bi bi-facebook"></div>
+                    </a>
+                    <a href="#">
+                        <div class="bi bi-twitter"></div>
+                    </a>
+                    <a href="#">
+                        <div class="bi bi-instagram"></div>
+                    </a>
+                    <a href="#">
+                        <div class="bi bi-linkedin"></div>
+                    </a>
                 </div>
 
                 <div class="mt-4 text-gray-700 text-sm">
@@ -160,7 +194,7 @@
         <!-- Small Screen Footer -->
         <div class="lg:hidden bg-white text-center py-6 border-t-2 border-gray-300 mt-20">
             <div class="flex flex-col items-center py-6">
-                <img src="assets/huskylogo-red.svg" class="w-52 mb-2">
+                <img src="./assets/huskylogo-red.svg" class="w-52 mb-2">
             </div>
 
             <div class="space-y-2 w-full px-4 py-4">
@@ -202,5 +236,39 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        //Mandatory code
+        function validateForm() {
+            let fields = [
+                "name", "country", "city", "specialization", "about",
+                "experience", "education", "reason", "passport", "visa",
+                "image", "email",
+            ];
+
+            for (let field of fields) {
+                let input = document.getElementById(field);
+                if (!input.value.trim()) {
+                    alert(`Please fill in the ${field.replace(/([A-Z])/g, ' $1')}`);
+                    input.focus();
+                    return;
+                }
+            }
+
+            // Redirect to next page if all fields are filled
+            window.location.href = "price.html";
+        }
+    </script>
+
 </body>
+
 </html>

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Confirmation</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100">
     <!-- Navbar -->
     <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-red-600 font-bold text-xl">
+            <a href="./index.html" class="text-red-600 font-bold text-xl">
                 <img src="./assets/huskylogo-red.svg" class="w-40 h-30" alt="Husky Logo">
             </a>
             <!-- Desktop Menu -->
@@ -31,22 +33,22 @@
             <a href="about.html" class="block px-4 py-2 text-gray-700 hover:text-red-600">About</a>
         </div>
     </nav>
-    
+
     <div class="flex items-center justify-center min-h-screen bg-gray-50 p-4 mt-14 relative">
         <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-xl">
             <!-- Order Confirmation -->
             <h2 class="text-xl font-semibold text-gray-900">Your Order is Almost Complete!</h2>
-    
+
             <!-- Total Value -->
             <p class="mt-4 text-sm text-gray-500">Total Amount Due</p>
-            <p class="text-2xl font-bold text-gray-900">₦50,000.00</p>
-    
+            <p class="text-2xl font-bold text-gray-900">$299.99</p>
+
             <!-- Payment Instructions -->
             <p class="mt-6 text-sm text-gray-500">To proceed with your payment, please contact us using the details below:</p>
-    
+
             <!-- WhatsApp Contact -->
             <div class="flex items-center bg-green-100 p-4 rounded-lg mt-3">
-                <img src="assets/whatsapp logo.jpg" alt="WhatsApp Logo" class="w-10 h-10 rounded-md">
+                <img src="./assets/whatsapp logo.jpg" alt="WhatsApp Logo" class="w-10 h-10 rounded-md">
                 <div class="ml-4">
                     <p class="text-gray-900 font-semibold">WhatsApp Us</p>
                     <p class="text-gray-700 font-medium">+1 (742) 369-1134</p>
@@ -55,47 +57,45 @@
                     </a>
                 </div>
             </div>
-    
+
             <!-- Helpful Information -->
             <div class="mt-6 bg-gray-100 p-4 rounded-lg">
                 <p class="text-gray-900 font-semibold">How to Complete Your Payment</p>
                 <p class="text-sm text-gray-700 mt-2">
-                    After making your payment, kindly send your <strong>payment proof</strong> to our WhatsApp line. 
-                    Our team will verify your transaction and confirm your order within a few minutes.
+                    After making your payment, kindly send your <strong>payment proof</strong> to our WhatsApp line. Our team will verify your transaction and confirm your order within a few minutes.
                 </p>
                 <p class="text-sm text-gray-700 mt-2">
-                    If you experience any issues, please feel free to reach out to us
-                    or call us directly at <span class="font-medium">+1 (742) 369-1134</span>. We're here to assist you!
+                    If you experience any issues, please feel free to reach out to us or call us directly at <span class="font-medium">+1 (742) 369-1134</span>. We're here to assist you!
                 </p>
             </div>
-    
+
             <!-- Done Button -->
             <button onclick="showPopup()" class="mt-6 w-full bg-red-500 text-white font-semibold py-3 rounded-lg hover:bg-red-600 transition">
                 Done
             </button>
         </div>
     </div>
-    
+
     <!-- POPUP OVERLAY -->
     <div id="popupOverlay" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
         <div class="bg-white p-10 rounded-lg shadow-lg w-96 text-center">
             <h2 class="text-xl font-bold text-gray-900">Payment Successful!</h2>
             <p class="text-gray-700 mt-2">You have successfully made your payment and applied to the position.</p>
-            
+
             <button onclick="goBackToJobs()" class="mt-4 bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">
-                Go Back to Job Page
+                Thank You!
             </button>
         </div>
     </div>
-    
-    
-    
+
+
+
     <!-- Footer -->
     <footer>
         <!-- Large Screen Footer -->
         <div class="hidden lg:block ">
             <div class="flex flex-col items-center py-6">
-                <img src="assets/huskylogo-red.svg" class="w-64 mb-2">
+                <img src="./assets/huskylogo-red.svg" class="w-64 mb-2">
             </div>
             <footer class="flex flex-col items-center justify-center text-left bg-white py-8">
                 <div class="flex justify-between w-4/5 max-w-6xl">
@@ -148,10 +148,18 @@
                 </div>
 
                 <div class="flex space-x-4 mt-6 text-gray-600 text-xl">
-                    <a href="#"><div class="bi bi-facebook"></div></a>
-                    <a href="#"><div class="bi bi-twitter"></div></a>
-                    <a href="#"><div class="bi bi-instagram"></div></a>
-                    <a href="#"><div class="bi bi-linkedin"></div></a>
+                    <a href="#">
+                        <div class="bi bi-facebook"></div>
+                    </a>
+                    <a href="#">
+                        <div class="bi bi-twitter"></div>
+                    </a>
+                    <a href="#">
+                        <div class="bi bi-instagram"></div>
+                    </a>
+                    <a href="#">
+                        <div class="bi bi-linkedin"></div>
+                    </a>
                 </div>
 
                 <div class="mt-4 text-gray-700 text-sm">
@@ -170,7 +178,7 @@
         <!-- Small Screen Footer -->
         <div class="lg:hidden bg-white text-center py-6 border-t-2 border-gray-300 mt-20">
             <div class="flex flex-col items-center py-6">
-                <img src="assets/huskylogo-red.svg" class="w-52 mb-2">
+                <img src="./assets/huskylogo-red.svg" class="w-52 mb-2">
             </div>
 
             <div class="space-y-2 w-full px-4 py-4">
@@ -213,15 +221,16 @@
         </div>
     </footer>
 
-<script>
-//    Pop up code
-    function showPopup() {
-        document.getElementById("popupOverlay").classList.remove("hidden");
-    }
+    <script>
+        //    Pop up code
+        function showPopup() {
+            document.getElementById("popupOverlay").classList.remove("hidden");
+        }
 
-    function goBackToJobs() {
-        window.location.href = "jobs 1.html";
-    }
-</script>
+        function goBackToJobs() {
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
+
 </html>
